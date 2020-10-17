@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat quos ex adipisci magnam ipsum totam."
+    />
+    <meta name="robots" content="index,follow" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Stamp Home</title>
+  </head>
+  <body>
+    <main>
+      <!--Header-->
+      <header>
+        <nav class="flex">
+          <div id="logo" class="logo flex">
+            <a href="#"><img src="/img/logo.svg" alt="logo" /></a>
+          </div>
+          <ul class="nav-items none flex">
+            <li>About</li>
+            <li>Integrations</li>
+            <li>Pricing</li>
+            <li>Contacts</li>
+          </ul>
+          <div class="menu flex">
+            <span
+              ><img class="burger" src="/img/menu-icon.svg" alt="menu"
+            /></span>
+          </div>
+        </nav>
+      </header>
+      <!--Hero-->
+      <section class="hero flex">
+        <div class="hero-copy flex">
+          <h1>Simple Way to Organize Your Inspirations</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit lorem.
+            <br />
+            Lorem ipsum dolor sit.
+          </p>
+        </div>
+        <div class="form flex">
+          <form action="#">
+            <h6>SIGN UP FOR FREE</h6>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="Password"
+              onclick="showPassword()"
+              required
+            />
+            <button type="submit" value="Send">
+              Sign Up <img src="/img/rt-arrow.svg" alt="" />
+            </button>
+            <div class="tos">
+              <p>By clicking "Sign Up" I agree to our</p>
+              <a href="#">Terms of Service</a>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--Footer-->
+      <footer class="flex">
+        <div class="copy flex">
+          <h4>&copy; 2016 Stamp. All Rights Reserved</h4>
+        </div>
+        <div class="footer-nav flex">
+          <ul class="nav-items flex">
+            <li>Contact</li>
+            <li>Help</li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <!-- Javascript -->
+    <script src="/main.js"></script>
+  </body>
+</html>

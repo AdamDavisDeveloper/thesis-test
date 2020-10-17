@@ -1,0 +1,269 @@
+:root {
+  --bg-overlay: #1b1b1b;
+  --gray: #9b9b9b;
+  --button-signup: #2c99ed;
+  --button-hover: #206ba5;
+  --form-gray: rgba(255, 255, 255, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  height: 100vh;
+  background: linear-gradient(rgba(27, 27, 27, 0.5), transparent),
+    url("/img/landing-bg.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Navigation */
+nav {
+  color: white;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+nav li {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  margin: 0rem 3.5rem;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.menu {
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-items {
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.hero-copy h1 {
+  font-size: 7rem;
+  line-height: 8.2rem;
+  margin-bottom: 4rem;
+}
+
+.hero-copy p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.hero-copy {
+  font-family: "Open Sans", sans-serif;
+  min-height: calc(80vh - 30%);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 45rem;
+  color: white;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-color: var(--form-gray);
+  border: 0;
+  color: white;
+}
+
+form input {
+  padding: 1.8rem 5rem;
+  padding-left: 1.5rem;
+  color: white;
+  font-size: 1.8rem;
+  width: 40rem;
+  background: var(--form-gray);
+}
+
+form input:focus {
+  outline-style: none;
+}
+
+input[name="name"] {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  border-bottom: var(--form-gray);
+}
+
+form h6 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+form button {
+  padding: 1.5rem;
+  width: 40rem;
+  font-size: 1.6rem;
+  color: white;
+  background: var(--button-signup);
+  border: none;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+form button:hover {
+  background: var(--button-hover);
+}
+
+form p {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--gray);
+  font-size: 1.5rem;
+}
+
+.tos {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.tos p {
+  margin-bottom: 1rem;
+}
+
+.tos a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.form {
+  min-height: calc(80vh - 30%);
+  flex: 2 1 45rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Footer */
+footer {
+  height: 10vh;
+  color: white;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  font-size: 1.4rem;
+}
+footer li {
+  text-transform: uppercase;
+  margin: 0rem 3.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.copy {
+  justify-content: start;
+  flex: 1;
+}
+
+/* Buger Menu */
+.slider {
+  height: 100vh;
+  width: auto;
+  background: #9b9b9b;
+}
+
+.nav-open {
+  transform: translateX(-100%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1120px) {
+  html {
+    font-size: 50%;
+  }
+  .hero-copy {
+    min-height: 20vh;
+  }
+  .hero-copy h1,
+  .hero-copy p {
+    text-align: center;
+  }
+  .form {
+    min-height: 10vh;
+  }
+  form input {
+    padding: 1rem 5rem;
+    padding-left: 1.5rem;
+    color: white;
+    font-size: 1.8rem;
+    width: 30rem;
+    background: var(--form-gray);
+  }
+  form button {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 803px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 682px) {
+  .none li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  html {
+    font-size: 40%;
+  }
+}
